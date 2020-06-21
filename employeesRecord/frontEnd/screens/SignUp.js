@@ -23,9 +23,9 @@ import * as Facebook from "expo-facebook";
 import { AuthContext } from "../App";
 
 const IOS_CLIENT_ID =
-  "337682953368-g4tsca29f5kdm2n5lnaph1n40ph9l6rj.apps.googleusercontent.com";
+  "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";   // PUT YOUR IOS_CLIENT_ID
 const ANDROID_CLIENT_ID =
-  "337682953368-7fsvdq1ghqlfc1rdiaummtq9h6ohfj6n.apps.googleusercontent.com";
+  "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";   // PUT YOUR ANDROID_CLIENT_ID
 
 const loginConfig = {
   iosClientId: IOS_CLIENT_ID,
@@ -33,7 +33,7 @@ const loginConfig = {
   scopes: ["profile", "email"],
 };
 
-const facebookClientId = "273711990504742";
+const facebookClientId = "xxxxxxxxxxxxxxxx";   // PUT YOUR FB_CLIENT_ID
 
 const windowHeight = Dimensions.get("window").height;
 const windowWidth = Dimensions.get("window").width;
