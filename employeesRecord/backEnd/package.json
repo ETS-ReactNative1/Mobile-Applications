@@ -1,0 +1,36 @@
+{
+  "name": "apiauthentication",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "darshan",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "axios": "^0.19.2",
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "crypto": "^1.0.1",
+    "express": "^4.17.1",
+    "express-promise-router": "^3.0.3",
+    "joi": "^14.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.26.0",
+    "mongoose": "^5.9.18",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.4.8",
+    "nodemailer-sendgrid": "^1.0.3",
+    "passport": "^0.4.1",
+    "passport-facebook-token": "^3.3.0",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-google-oauth20-with-people-api": "^2.0.0",
+    "passport-google-plus-token": "^2.1.0",
+    "passport-google-token": "^0.1.2",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "seedrandom": "^3.0.5"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "Employees record",
+    "slug": "employees-record",
+    "platforms": ["ios", "android", "web"],
+    "ios": {
+      "bundleIdentifier": "com.awesomecompany.employees-record",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "com.awesomecompany.employees_record",
+      "versionCode": 1
+    },
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0384fc"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "description": ""
+  }
+}
