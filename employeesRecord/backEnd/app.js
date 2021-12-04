@@ -1,8 +1,9 @@
-const express = require("express");
-const morgan = require("morgan");
-const bodyParser = require("body-parser");
-const mongoose = require("mongoose");
-const { mongoURL } = require("./configuration/index");
+const express = require('express')
+const morgan = require('morgan')
+const bodyParser = require('body-parser')
+const mongoose = require('mongoose')
+const { mongoURL } = require('./configuration/index')
+
 // mongoose.connect("mongodb://localhost/APIAuthentication", {
 //   useNewUrlParser: true,
 //   useUnifiedTopology: true,
@@ -13,14 +14,14 @@ mongoose
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
-  .then(() => console.log("MongoDB connection established."))
-  .catch((error) => console.log("Error in connecting to mongoDB : ", error));
+  .then(() => console.log('MongoDB connection established.'))
+  .catch((error) => console.log('Error in connecting to mongoDB : ', error))
 
-const app = express();
+const app = express()
 
 //Middlewares
-app.use(morgan("dev"));
-app.use(bodyParser.json());
+app.use(morgan('dev'))
+app.use(bodyParser.json())
 
 //Routes
 
@@ -29,10 +30,10 @@ app.use(bodyParser.json());
 //http://localhost:3000/users/signin
 //http://localhost:3000/users/secret
 
-app.use("/users", require("./routes/users"));
+app.use('/users', require('./routes/users'))
 
 //Start the server
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3000
 app.listen(port, () => {
-  console.log(`server is listening on port ${port}`);
-});
+  console.log(`server is listening on port ${port}`)
+})
